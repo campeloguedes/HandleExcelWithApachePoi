@@ -8,7 +8,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-public class EditarExcel {
+public class EditarExcel2 {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
@@ -26,9 +26,8 @@ public class EditarExcel {
 			
 			int numeroCelulas = linha.getPhysicalNumberOfCells();
 			
-			String valorCelula = linha.getCell(0).getStringCellValue();
-			
-			linha.getCell(0).setCellValue(valorCelula + " Novo Valor");
+			Cell cell = linha.createCell(numeroCelulas);
+			cell.setCellValue("5.550,60");
 			
 		}
 		
