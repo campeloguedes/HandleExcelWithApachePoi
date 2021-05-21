@@ -38,7 +38,7 @@ public class EditarExcel {
 		saida.flush();
 		saida.close();
 		
-		System.out.println("Planilha Alterada");
+		System.out.println("Planilha Alterada! Nova Coluna Inserida");
 		
 		
 		
